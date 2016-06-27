@@ -1,51 +1,43 @@
+@import "modules/header.css";
+@import "modules/footer.css";
+@import "modules/pure.css";
+@import "modules/grids-responsive.css";
+@import "modules/nav.css";
+@import "modules/works.css";
 
-header 
-{ 
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:127px;
-    color:#2F2F2D;
-    background-color:#2F2F2D;
-  
+
+
+.hide-sm {
+    display: none;
 }
 
+.hide-md {
+    display: block;
+}
 
-#logo {
-    width:181px;
-    height: 60px;
-    margin: 0 auto;
-   
-   }
+@media screen and (min-width: 36.5em) {
+    .hide-sm {
+        display: block;
+    }
 
-#logo h1
-{
+    .hide-md {
+        display: none;
+    }
+}
 
-    margin: 0;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
     padding: 0;
-
 }
 
-#logo h1 a 
-{
-
-    background-image: url(../img/logo.svg);
-    float: left;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    position: relative;
-    top: 20px;
-
-}
-
-footer
-{
-	position: absolute;
-	width: 100%;
-	height: 95px;
-	float: left;
-	margin-top: 50px;
-    background-color: #00FFAA;
+body{
+font-family: 'Lato', sans-serif;
 }

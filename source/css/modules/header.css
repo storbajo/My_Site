@@ -1,51 +1,42 @@
-
-header 
-{ 
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:127px;
-    color:#2F2F2D;
-    background-color:#2F2F2D;
-  
-}
-
-
-#logo {
-    width:181px;
-    height: 60px;
-    margin: 0 auto;
-   
-   }
-
-#logo h1
-{
-
-    margin: 0;
-    padding: 0;
-
-}
-
-#logo h1 a 
-{
-
-    background-image: url(../img/logo.svg);
-    float: left;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+.header-sm-icon {
     position: relative;
-    top: 20px;
-
+    height: 44px;
+    margin: 20px;
+    z-index: 2;
 }
 
-footer
-{
-	position: absolute;
-	width: 100%;
-	height: 95px;
-	float: left;
-	margin-top: 50px;
+.header-sm-icon .icon {
+    position: absolute;
+    left:0;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    border: 3px solid;
+    color: #00FFAA;
+    text-align: center;
+}
+
+.header-sm-icon .icon span {
+    display: block;
+    position: relative;
+    right: 1px;
+    height: 3px;
+    width: 17px;
+    border-radius: 5px;
     background-color: #00FFAA;
+    margin: auto;
 }
+
+.header-sm-icon .icon .first {
+    margin-top: 11px;
+}
+
+.header-sm-icon .icon .second {
+    top: 3px;
+}
+
+
+.header-sm-icon .icon .last {
+    top: 6px;
+}
+

@@ -1,0 +1,24 @@
+.nav-wrap {
+    text-align: center;
+}
+
+.nav-item {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+}
+
+.nav-anchor{
+    color:#00FFAA;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-anchor:hover{
+    background-color:#00FFAA;
+    color:#2F2F2D;
+}
+

@@ -1,0 +1,31 @@
+.works{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.works .work-item {
+    height: 49.86%;
+}
+
+.work-item, .work-item .image, .work-item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.works .view-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    background-color:rgba( 0, 255,170,.9);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0; 
+}
