@@ -1,0 +1,54 @@
+.footer {
+  
+    width: 100%;
+}
+
+.footer-info{
+    background-color:#00FFAA;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    font-family: Courier New, Courier, monospace;
+    position: relative;
+    padding:10px 0;
+    background-image: url(source/img/background-footer.png);
+    background-size: 100%;
+    display: inline-block;
+
+}
+
+.footer-info p{
+    margin: 5px 0;
+
+
+
+}
+
+.footer-networks{
+
+
+}
+
+.social tumblr a{
+    background-image: url(source/img/tumblr-icon.svg);
+    width: 21px;
+    height: 36px;
+}
+
+.social dribbble a{
+    background-image: url(source/img/dribbble-icon.svg);
+    width: 36px;
+    height: 36px;
+}
+
+.social instagram a{
+    background-image: url(source/img/instagram-icon.svg);
+    width: 36px;
+    height: 36px;
+}
+
+.social soundcloud a{
+    background-image: url(source/img/soundcloud-icon.svg);
+    width: 60px;
+    height: 26px;
+}
