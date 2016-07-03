@@ -1,0 +1,38 @@
+.about{
+    display: block;
+    padding: 0 20px;
+    
+}
+
+.about-title{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    color: #2F2F2D;
+    font-size: 30px;
+}
+.about-info{
+    font-size: 14px;
+     margin-bottom: 50px;
+
+}
+
+.about-image img {
+    width: 100%;
+}
+.references-container
+{
+    text-align: center;
+    font-size: 14px;
+     margin-bottom: 30px;
+     letter-spacing: 0;
+}
+
+.references-title{
+    font-family: 'Arvo', serif;
+   
+}
+
+.reference-info{
+    font-weight: 600;
+    line-height: 100%;
+}

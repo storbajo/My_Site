@@ -1,0 +1,46 @@
+.contact{
+    display:block;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contact-title{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    color: #2F2F2D;
+    font-size: 30px;
+}
+
+
+.wallpaper-info{
+    text-align: center;
+    font-size: 16px;
+    color: #2F2F2D;
+    font-family:'Arvo', serif;
+
+}
+
+.wallpaper-list img{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.contact legend{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    color: #2F2F2D;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact fieldset{
+    border: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.contact input{
+    width:100%;
+}
