@@ -1,8 +1,12 @@
 .contact{
     display:block;
     width: 100%;
-    padding: 0 20px;
 }
+
+.contact-content {
+    letter-spacing: 0;
+    padding: 0 20px;
+} 
 
 .contact-title{
     text-align: center;
@@ -19,6 +23,11 @@
     font-family:'Arvo', serif;
 
 }
+
+.wallpaper-container{
+    margin-top: 20px;
+}
+
 
 .wallpaper-list img{
     width:100%;
@@ -43,4 +52,51 @@
 
 .contact input{
     width:100%;
+    box-sizing: border-box;
+    border: 2px solid #979797;
+    background-color: #F8F8F8;
+    padding: 5px 10px;
+    height: 45px;
+
+
+}
+
+.wallpaper-inside{
+    letter-spacing: 0;
+}
+
+textarea{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #979797;
+    background-color: #F8F8F8;
+    padding: 5px 10px;
+    max-width: 100%;
+    resize: none;
+    height: 140px;
+    
+    
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+     font-family: 'Arvo', serif;
+     font-size: 14px;
+}
+
+
+button {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #00FFAA;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 0;
+    display: inline-block;
+    font-weight: 700;
+    height: 45px;
+    margin-top: 10px;
+    
 }
