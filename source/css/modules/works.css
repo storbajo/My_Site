@@ -29,3 +29,48 @@
     bottom: 0;
     padding: 10px 0; 
 }
+
+.works-container{
+    padding: 0% 20px;
+    display: block;
+    position: relative;
+}
+
+.work-image img{
+    width: 100%;
+}
+
+.work-title {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    color: #2F2F2D;
+    position: relative;
+    top: 1px;
+}
+
+.work-info {
+    font-size: 14px;
+    color: #2F2F2D;
+}
+
+.arrows span{
+    width: 19px;
+    height: 31px;
+    position: absolute;
+    background-image: url("../../img/arrow.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+.arrows .arrow-left{
+    left: 20px;
+    top: 7px;
+}
+
+.arrow-right{
+    transform: rotate(180deg);
+    right: 20px;
+   
+}
