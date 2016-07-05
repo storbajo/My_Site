@@ -40,3 +40,15 @@
     top: 6px;
 }
 
+/*Medium Styles*/
+
+@media screen and (min-width: 35.5em) {
+
+}
+
+/*LargeStyles*/
+
+@media screen and (min-width: 48em) {
+
+}
+

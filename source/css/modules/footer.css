@@ -1,5 +1,4 @@
 .footer {
-  
     width: 100%;
 }
 
@@ -12,15 +11,10 @@
     padding:10px 0;
     background-image: url("../../img/background-footer.png");
     display: inline-block;
-  
-
 }
 
 .footer-info p{
     margin: 5px 0;
-
-
-
 }
 
 .footer-networks{
@@ -28,7 +22,6 @@
     display:block;
     width: 100%;
     text-align: center;
-
 }
 
 .footer-networks a {
@@ -46,26 +39,34 @@
     background-image: url("../../img/tumblr-icon.svg");
     width: 30px;
     height: 40px;
-    
 }
 
 .dribbble a{
     background-image: url("../../img/dribbble-icon.svg");
     width: 40px;
     height: 40px;
-    
 }
 
 .instagram a{
     background-image: url("../../img/instagram-icon.svg");
     width: 40px;
     height: 40px;
-   
 }
 
 .soundcloud a{
     background-image: url("../../img/soundcloud-icon.svg");
     width: 60px;
     height: 30px;
-  
+}
+
+/*Medium Styles*/
+
+@media screen and (min-width: 35.5em) {
+
+}
+
+/*LargeStyles*/
+
+@media screen and (min-width: 48em) {
+
 }
