@@ -20,6 +20,10 @@
     display: none;
 }
 
+.hide-sm-m {
+    display: none;
+}
+
 @media screen and (min-width: 36.5em) {
     .hide-sm {
         display: block;
@@ -27,6 +31,12 @@
 
     .hide-md {
         display: none;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .hide-sm-m{
+        display: block;
     }
 }
 
@@ -55,11 +65,18 @@ font-family: 'Arvo', serif;
 /*Medium Styles*/
 
 @media screen and (min-width: 35.5em) {
-
 }
 
-/*LargeStyles*/
+/*Large Styles*/
 
 @media screen and (min-width: 48em) {
+
+
+
+
+
+
+
+
 
 }
