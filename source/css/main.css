@@ -24,6 +24,10 @@
     display: none;
 }
 
+.hide-lg{
+    display:block;
+}
+
 @media screen and (min-width: 36.5em) {
     .hide-sm {
         display: block;
@@ -38,6 +42,10 @@
     .hide-sm-m{
         display: block;
     }
+
+    .hide-lg{
+    display: none;
+}
 }
 
 li {
