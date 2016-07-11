@@ -71,6 +71,7 @@
     .references {
         text-align: center;
         padding: 0 55px;
+        box-sizing: border-box;
     }
 
     .reference-info {
