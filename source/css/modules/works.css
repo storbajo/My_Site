@@ -9,9 +9,14 @@
     height: 49.86%;
 }
 
-.work-item, .work-item .image, .work-item .image img {
+.work-item{
+    position:relative;
+}
+
+.work-item .image, .work-item .image img {
     width: 100%;
     height: 100%;
+    vertical-align: top;
 }
 
 .works .view-more {
@@ -36,6 +41,10 @@
     position: relative;
 }
 
+.work-image {
+    margin-bottom: 5px;
+}
+
 .work-image img{
     width: 100%;
 }
@@ -55,33 +64,108 @@
 }
 
 .arrows span{
-    width: 19px;
-    height: 31px;
-    position: absolute;
-    background-image: url("../../img/arrow.svg");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    top: 0;
+    position: relative;
+    margin: 0 0 10px;
+    width: 120px;
+    padding: 5px 0;
+    background-color: #00FFAA;
+    text-align: center;
+    line-height: 100%;
+    cursor: pointer;
+    color: #034730;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid #00BF80;
+}
+
+.arrows span:hover {
+    opacity: .6;
+}
+
+.arrows{
+    position: relative;
 }
 
 .arrows .arrow-left{
-    left: 20px;
-    top: 7px;
+    float: left;
 }
 
 .arrow-right{
-    transform: rotate(180deg);
-    right: 20px;
+    float: right;
 }
+
+.anchor{
+    padding-top: 5px;
+}
+
+.works .description{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47,47,45,.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    visibility: hidden;
+}
+
+.work-item:hover .description {
+    visibility: visible;
+}
+
+.description .title,
+.description .anchor{
+    color: #00FFAA;
+    display: block;
+    width: 100%
+}
+
+.description .title{
+    text-transform: uppercase;
+}
+
 
 /*Medium Styles*/
 
 @media screen and (min-width: 35.5em) {
 
+.works .work-item{
+    height: auto;
+}
+
+.works{
+    position: relative;
+}
+
 }
 
 /*LargeStyles*/
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 48em)  {
+.work-detail-image .work-image {
+    padding: 30px 0 10px 50px;
+    overflow: hidden
+}
+
+.work-detail-image .work-image img {
+    padding: 0 0 0 20px;
+}
+
+.work-detail {
+    padding-left: 30px;
+}
+
+.work-detail .work-detail-info{
+    margin-top: 10px;
+}
+
+.work-detail-info .work-title{
+    text-align: left;
+}
+
 
 }
