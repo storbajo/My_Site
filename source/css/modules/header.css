@@ -1,7 +1,66 @@
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
 .header-logo.pure-u-1 {
-    text-align: center;    
+    text-align: center;
 }
 
+.nav {
+    display: flex !important;
+    position: absolute;
+    top: -100%;
+    background-color: rgba(0,0,0,.7);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .8s ease-in-out;
+    opacity: 0;
+    animation:fadeIn ease-in 1;
+    animation-duration:1s;
+}
+
+.nav .nav-wrap {
+    width: 100%;
+}
+
+/*When mainNav is open*/
+
+.open .nav {
+    opacity: 1;
+    top: 0;
+    z-index: 2;
+    overflow: auto;
+}
+
+.open {
+    overflow-y: hidden;
+}
+
+
+.open .header-sm-icon .second {
+    display: none;
+}
+
+.open .first {
+    transform: rotate(45deg);
+}
+
+.open .last {
+    top: -3px !important;
+    transform: rotate(-45deg);
+}
+
+.open .header-sm-icon {
+    z-index: 3;
+}
+
+.open .header-sm-icon .icon {
+    top: 10px;
+}
+
+
+/* end mainNav open */
 
 .header-logo .logo{
     background-image: url("../../img/logo.svg");
@@ -13,23 +72,22 @@
 
 .header-sm-icon {
     z-index: 2;
-    margin: 20px;
+    margin: 10px;
     position: absolute;
-    top: 20px;
+    top: 0;
     width: 38px !important;
     height: 38px;
     right: 0;
+    cursor: pointer;
 }
 
 
 .header-sm-icon .icon {
     position: absolute;
     right: 0;
-    top: -25px;
+    top: 0;
     width: 38px;
     height: 38px;
-    border-radius: 100%;
-    border: 3px solid;
     color: #00FFAA;
     text-align: center;
 }
@@ -39,10 +97,11 @@
     position: relative;
     right: 1px;
     height: 3px;
-    width: 17px;
+    width: 22px;
     border-radius: 5px;
     background-color: #00FFAA;
     margin: auto;
+    transition: all .3s ease;
 }
 
 .header-sm-icon .icon .first {
