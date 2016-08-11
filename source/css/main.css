@@ -34,18 +34,18 @@
     }
 
     .hide-md {
-        display: none;
+        display: none !important;
     }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 48em) {
     .hide-sm-m{
-        display: block;
+        display: block !important;
     }
 
     .hide-lg{
-    display: none;
-}
+        display: none;
+    }
 }
 
 li {

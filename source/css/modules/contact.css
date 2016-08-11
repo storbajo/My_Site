@@ -98,8 +98,8 @@ button {
     font-weight: 700;
     height: 45px;
     margin-top: 10px;
-    color: #2F2F2D;    
-    transition: all 0.3s ease; 
+    color: #2F2F2D;
+    transition: all 0.3s ease;
     text-transform: uppercase;
 }
 
@@ -115,7 +115,7 @@ button:hover {
 
 /*LargeStyles*/
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 48em) {
 
 .contact{
     padding-top: 30px;
