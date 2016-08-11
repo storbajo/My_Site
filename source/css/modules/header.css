@@ -14,10 +14,22 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
     opacity: 0;
-    animation:fadeIn ease-in 1;
-    animation-duration:1s;
+    -webkit-animation:  fadeIn ease-in 1;
+    -moz-animation:  fadeIn ease-in 1;
+    -ms-animation:  fadeIn ease-in 1;
+    -o-animation:  fadeIn ease-in 1;
+    animation:  fadeIn ease-in 1;
+    -webkit-animation-duration:1s ;
+    -moz-animation-duration:1s ;
+    -ms-animation-duration:1s ;
+    -o-animation-duration:1s ;
+    animation-duration:1s ;
 }
 
 .nav .nav-wrap {
@@ -43,11 +55,19 @@
 }
 
 .open .first {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .open .last {
     top: -3px !important;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -101,7 +121,11 @@
     border-radius: 5px;
     background-color: #00FFAA;
     margin: auto;
-    transition: all .3s ease;
+    -webkit-transition: all.3s ease;
+    -moz-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+    -o-transition: all.3s ease;
+    transition: all.3s ease;
 }
 
 .header-sm-icon .icon .first {
