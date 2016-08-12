@@ -79,12 +79,81 @@ font-family: 'Arvo', serif;
 
 @media screen and (min-width: 48em) {
 
+}
+
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
 
 
+.home {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/home-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-wrap;
+    flex-direction: column;
+}
 
+.home h1 {
+    font-size: 75px;
+    margin: 0.67em 0;
+    line-height: 95%;
+    letter-spacing: -2px;
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    text-shadow: 2px 4px 4px rgba(0,0,0, 0.5);
+    margin-bottom: 10px;
+    font-family: 'Arvo', serif;
+}
 
+.home span {
+    font-size: 18px;
+    color: #00FFAA;
+    text-align: right;
+    font-family: 'Arvo', serif;
+    font-style: italic;
+    margin-top: 5px;
+    width: 100%;
+    display: block;
+}
 
+.home h1:after, .home h1:before {
+    content: '"';
+    color: #00FFAA;
+}
 
+.home h1:before {
+    position: relative;
+    right: 10px;
+}
 
+.open .home h1 {
+    visibility: hidden;
+    opacity: 0;
+}
 
+.wrapp-home {
+    width: 755px;
+    margin: 0 auto;
+}
+
+.home span:after {
+    content: ">>";
+    color: white;
+    margin-left: 5px;
+}
+
+.home span:before {
+    content: "<<";
+    color: white;
+    margin-right: 5px;
 }

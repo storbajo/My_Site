@@ -70,48 +70,54 @@
 
 @media screen and (min-width: 35.5em) {
 
-    .footer-info{
-        text-align: center;
-        background-color: none;
-        box-sizing: border-box;
+    .footer.pure-g{
+    position: absolute;
+    bottom: 0;
+    background: none;
+    flex-direction: row-reverse;
     }
 
-  .footer.pure-g {
-        flex-direction: row-reverse;
-        background-color: #00FFAA;
-        background-image: url("../../img/background-footer.png");
+    .footer a {
+        color: #00FFAA;
+    }
+
+    .footer-info{
+        text-align: left;
+        padding-left: 40px;
+        background: none;
+        color: #00FFAA;
+        box-sizing: border-box;
+        margin-bottom: 10px;
     }
 
     .footer-networks{
-        text-align: center;
+        text-align: right;
+        padding-right: 40px;
         box-sizing: border-box;
-
+        margin-bottom: 10px;
     }
 
-    .footer{
-        padding: 10px 0;
-        text-align: center;
+    .tumblr a{
+        background-image: url("../../img/tumblr-icon-2.svg");
     }
 
+    .dribbble a{
+        background-image: url("../../img/dribbble-icon-2.svg");
+    }
+
+    .instagram a{
+        background-image: url("../../img/instagram-icon-2.svg");
+    }
+
+    .soundcloud a{
+        background-image: url("../../img/soundcloud-icon-2.svg");
+    }
 
 }
 
 
 @media screen and (min-width: 48em) {
 
-    .footer{
-    position: absolute;
-    bottom: 0;
-    }
 
-    .footer-info{
-        text-align: left;
-        padding-left: 60px;
-    }
-
-    .footer-networks{
-        text-align: right;
-        padding-right: 60px;
-    }
 
 }

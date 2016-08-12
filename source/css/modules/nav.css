@@ -22,6 +22,7 @@
     color:#2F2F2D;
 }
 
+
 /*Medium Styles*/
 
 @media screen and (min-width: 35.5em) {
@@ -31,6 +32,8 @@
 /*LargeStyles*/
 
 @media screen and (min-width: 48em) {
+
+
 
 }
 

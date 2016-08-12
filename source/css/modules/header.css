@@ -27,6 +27,8 @@
 /*When mainNav is open*/
 
 .open .nav {
+    width: 100%;
+    right: 0;
     opacity: 1;
     top: 0;
     z-index: 2;
@@ -144,6 +146,9 @@
     display:flex;
     justify-content: center;
     padding-top: 35px;
+    position: relative;
+    z-index: 3;
+    transition: all 1s ease-in-out;
 }
 
 }
@@ -172,15 +177,25 @@
         padding-right: 40px;
     }
 
-    .nav-item .nav-anchor{
+    .nav-item .nav-anchor {
     width: 100%;
     padding: 5px;
     text-transform: none;
     letter-spacing: 2px;
     text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0, .8);
  }
+
+    .nav-item .nav-anchor:hover {
+        text-shadow: 0 0 0;
+    }
     .nav{
-        text-align: right;
+    text-align: right;
+    opacity: 1;
+    top: 0;
+    position: relative;
+    z-index: 3;
+    background: none;
     }
 
 }
