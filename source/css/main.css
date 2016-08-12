@@ -7,6 +7,9 @@
 @import "modules/about.css";
 @import "modules/contact.css";
 
+* {
+    box-sizing: border-box;
+}
 
 .hide-sm {
     display: none;
@@ -70,20 +73,6 @@ footer{
 font-family: 'Arvo', serif;
 }
 
-/*Medium Styles*/
-
-@media screen and (min-width: 35.5em) {
-}
-
-/*Large Styles*/
-
-@media screen and (min-width: 48em) {
-
-}
-
-@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
-
-
 .home {
     position: absolute;
     top: 0;
@@ -103,7 +92,7 @@ font-family: 'Arvo', serif;
 }
 
 .home h1 {
-    font-size: 75px;
+    font-size: 60px;
     margin: 0.67em 0;
     line-height: 95%;
     letter-spacing: -2px;
@@ -124,6 +113,8 @@ font-family: 'Arvo', serif;
     margin-top: 5px;
     width: 100%;
     display: block;
+    position: relative;
+    right: 17px;
 }
 
 .home h1:after, .home h1:before {
@@ -136,14 +127,16 @@ font-family: 'Arvo', serif;
     right: 10px;
 }
 
-.open .home h1 {
+.open .wrapp-home {
     visibility: hidden;
     opacity: 0;
 }
 
 .wrapp-home {
-    width: 755px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
 .home span:after {
@@ -157,3 +150,32 @@ font-family: 'Arvo', serif;
     color: white;
     margin-right: 5px;
 }
+
+/*Medium Styles*/
+
+@media screen and (min-width: 35.5em) {
+    .wrapp-home  {
+        padding: 0;
+    }
+
+    .home h1 {
+        font-size: 75px;
+    }
+
+    .home span {
+        right: 0;
+    }
+}
+
+/*Large Styles*/
+
+@media screen and (min-width: 48em) {
+
+    .home .wrapp-home {
+        width: 755px;
+    }
+}
+
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
+
