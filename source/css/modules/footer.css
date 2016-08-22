@@ -1,6 +1,5 @@
 .footer.pure-g {
     width: 100%;
-    display: none;
 }
 
 .footer-info{
@@ -46,16 +45,13 @@
 
 @media screen and (min-width: 35.5em) {
 
-    .footer.pure-g{
+    .footer.pure-g {
         display: flex;
-        position: absolute;
-        bottom: 0;
-        background: none;
+        position: relative;
+        right: 0;
+        background-color: #00ffaa;
+        background-image: url("../../img/background-footer.png");
         flex-direction: row-reverse;
-    }
-
-    .footer a {
-        color: #00FFAA;
     }
 
     .footer .icon-soundcloud-icon {
@@ -66,7 +62,6 @@
         text-align: left;
         background: none;
         padding-left: 10px;
-        color: #00FFAA;
         box-sizing: border-box;
         margin-bottom: 10px;
     }

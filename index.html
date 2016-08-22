@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="source/vendor/jquery.onepage-scroll.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,14 +20,14 @@
             </div>
         </div>
         <div class="pure-g">
-            <div class="header-logo pure-u-1 pure-u-md-12-24 hide-sm">
-                <a href="" class="logo"></a>
+            <div class="header-logo pure-u-1 pure-u-md-6-24 hide-sm">
+                <a href="#1" data-index="1" class="logo"></a>
             </div>
-            <nav class="nav pure-u-1 pure-u-sm-4-5 pure-u-md-12-24">
+            <nav class="nav pure-u-1 pure-u-sm-4-5 pure-u-md-18-24">
                 <ul class="nav-wrap">
-                    <li class="nav-item"><a href="" class="nav-anchor">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-anchor">Work</a></li>
-                    <li class="nav-item"><a href="" class="nav-anchor">Contact</a></li>
+                    <li class="nav-item"><a data-index="2" href="#2" class="nav-anchor">About</a></li>
+                    <li class="nav-item"><a data-index="3" href="#3" class="nav-anchor">Work</a></li>
+                    <li class="nav-item"><a data-index="4" href="#4" class="nav-anchor">Contact</a></li>
                     <li class="nav-item"><a href="" class="nav-anchor">Store</a></li>
                 </ul>
             </nav>
@@ -35,54 +36,53 @@
 
     <main class="main">
 
-        <div class="home">
+        <section class="home">
             <div class="wrapp-home">
                 <h1>We need less words and more images.</h1>
                 <span>by me</span>
             </div>
-        </div>
+        </section>
 
-
-        <!--<div class="works pure-g">
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
-                </div>
-                <div class="description hide-sm">
-                    <span class="title">
-                        proyecto1
-                    </span>
-                    <a href="" class="anchor">ver más</a>
-                </div>
+        <section class="about pure-g">
+            <div class="about-image pure-u-1 pure-u-sm-5-5 pure-u-md-8-24">
+                <img src="source/img/about-img.png" alt="">
             </div>
+            <div class="about-all pure-u-sm-5-5 pure-u-md-16-24">
+                <div class="about-content pure-u-1 pure-u-md-14-24">
+                    <h1 class="about-title">About Me</h1>
+                     <p class="about-info">Storbajo, is a brand that I created for do my work as a designer.
+                    </p>
+                    <p class="about-info">Since 2013 I’m been working in my own projects and my own brand, giving to each of my projects my own stamp, trying to find the best way to resolve comunitation problems and thinking how I can develop it.</p>
 
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+                    <p class="about-info">I’ve done graphic design projects, art direction, visual identity, lettering designs, and I’m dabbling in web design doing some projects with my mentor and best friend Andres Vargas.</p>
                 </div>
-                <div class="description hide-sm">
-                    <span class="title">
-                        proyecto2
-                    </span>
-                    <a href="" class="anchor">Ver Más</a>
-                </div>
+
+                <ul class="references pure-u-1 pure-u-sm-5-5 pure-u-md-8-24">
+                    <li class="references-container pure-u-sm-8-24 pure-u-md-1">
+                        <h2 class="references-title">Proyects</h2>
+                        <p class="reference-info">20-06</p>
+                        <p class="reference-info">xxxx-Magazine</p>
+                        <p class="reference-info">Macao</p>
+                    </li>
+                    <li class="references-container pure-u-sm-8-24  pure-u-md-1">
+                        <h2 class="references-title"><a href="">Published</a></h2>
+                        <p class="reference-info"><a href="">Typism Book 2</a></p>
+                        <p class="reference-info"><a href="">Typism Book 3</a></p>
+                    </li>
+                    <li class="references-container pure-u-sm-7-24 pure-u-md-1">
+                        <h2 class="references-title">Friends & </br> Colleagues</h2>
+                        <p class="reference-info"><a href="">Andres Vargas</a></p>
+                        <p class="reference-info"><a href="">Pico Motion</a></p>
+                        <p class="reference-info"><a href="">Capitan Jim</a></p>
+                        <p class="reference-info"><a href="">Goske Rojo</a></p>
+                    </li>
+                </ul>
             </div>
+        </section>
 
+        <section id="works" class="works pure-g">
             <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
-                </div>
-                <div class="description hide-sm">
-                    <span class="title">
-                        proyecto3
-                    </span>
-                    <a href="" class="anchor">ver más</a>
-                </div>
-            </div>
-
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -92,9 +92,8 @@
                 </div>
             </div>
 
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -104,9 +103,8 @@
                 </div>
             </div>
 
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -116,9 +114,8 @@
                 </div>
             </div>
 
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm-m">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -127,9 +124,8 @@
                     <a href="" class="anchor">ver más</a>
                 </div>
             </div>
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm-m">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -138,9 +134,8 @@
                     <a href="" class="anchor">ver más</a>
                 </div>
             </div>
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm-m">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -150,8 +145,7 @@
                 </div>
             </div>
             <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm-m">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -161,8 +155,7 @@
                 </div>
             </div>
             <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm-m">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+                <div class="image" data-image="source/img/covers/4.png">
                 </div>
                 <div class="description hide-sm">
                     <span class="title">
@@ -171,142 +164,67 @@
                     <a href="" class="anchor">ver más</a>
                 </div>
             </div>
-            <div class="work-item pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 hide-sm-m">
-                <div class="image">
-                    <img src="source/img/covers/4.png" alt="">
+        </section>
+
+        <section class="contact">
+            <div class="contact-content pure-g">
+                <div class="contact-form pure-u-1 pure-u-lg-10-24">
+                    <form action="" class="form">
+                        <h1 class="contact-title">Contact</h1>
+                        <legend>Feel free to contact me here!:</legend>
+                        <fieldset>
+                            <input type="text" placeholder="Name">
+                        </fieldset>
+                        <fieldset>
+                            <input type="email" placeholder="E-mail">
+                        </fieldset>
+                        <fieldset class="last">
+                            <textarea placeholder="Message"></textarea>
+                        </fieldset>
+                        <button type="submit">
+                            Send
+                        </button>
+                    </form>
                 </div>
-                <div class="description hide-sm">
-                    <span class="title">
-                        proyecto12
-                    </span>
-                    <a href="" class="anchor">ver más</a>
+            <div class="wallpaper-container pure-g pure-u-lg-14-24">
+                <div class="wallpaper-inside">
+                <p class="wallpaper-info">You can download some of my wallpapers!</p>
+                <ul class="wallpaper-list pure-g">
+                    <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item"><a class="wallpaper-anchor" href="">
+                            <img src="source/img/wallpaper.png" alt="">
+                        </a>
+                    </li>
+                    <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item"><a class="wallpaper-anchor" href="">
+                            <img src="source/img/wallpaper.png" alt="">
+                        </a>
+                    </li>
+                    <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item hide-sm-m "><a class="wallpaper-anchor" href="">
+                            <img src="source/img/wallpaper.png" alt="">
+                        </a>
+                    </li>
+                    <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item hide-sm-m "><a class="wallpaper-anchor" href="">
+                            <img src="source/img/wallpaper.png" alt="">
+                        </a>
+                    </li>
+                </ul>
                 </div>
             </div>
+            <footer class="footer pure-g">
+                 <ul class="footer-networks pure-u-sm-10-24">
+                     <li class="social tumblr"><a class="icon-tumblr-icon" href="https://storbajo.tumblr.com" target="_blank"></a></li>
+                     <li class="social dribbble"><a class="icon-dribbble-icon" href="https://dribbble.com/storbajo" target="_blank"></a></li>
+                     <li class="social instagram"><a class="icon-instagram-icon" href="https://instagram.com/storbajo" target="_blank"></a></li>
+                     <li class="social soundcloud"><a class="icon-soundcloud-icon" href="https://soundcloud.com/storbajo" target="_blank"></a></li>
+                </ul>
+                <div class="footer-info pure-u-sm-14-24">
+                    <p><a href="mailto:contact@storbajo.com">contact@storbajo.com</a></p>
+                    <p>(+57) 314 258 9606</p>
+                    <p><strong>Bogotá - Colombia</strong></p>
+                </div>
+             </footer>
+        </section>
+</main>
 
-            <a href="" class="view-more hide-md">View More</a>
-        </div>-->
-
-    </main>
-<!--<div class="works-container pure-g">
-
-    <div class="work-detail pure-g">
-        <div class="work-detail-info pure-u-md-8-24 pure-u-1">
-            <h1 class="work-title">Dog Town</h1>
-            <p class="work-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, sit dolorum adipisci reiciendis atque inventore quas est recusandae dolores veritatis iure eaque beatae, sed magnam mollitia quam, doloremque magni culpa.</p>
-        </div>
-
-        <div class="work-detail-image pure-u-md-16-24 pure-u-1">
-            <div class="work-image"><img src="source/img/dog-town/dog-town-posters.png" alt="Dog Town"></div>
-            <div class="work-image"><img src="source/img/dog-town/dog-town-posters.png" alt="Dog Town"></div>
-            <div class="work-image"><img src="source/img/dog-town/dog-town-posters.png" alt="Dog Town"></div>
-            <div class="work-image"><img src="source/img/dog-town/dog-town-posters.png" alt="Dog Town"></div>
-            <div class="work-image"><img src="source/img/dog-town/dog-town-posters.png" alt="Dog Town"></div>
-        </div>
-
-        <div class="arrows pure-u-1 hide-lg">
-        <span class="arrow-left">Prev</span>
-        <span class="arrow-right">Next</span>
-    </div>
-
-    </div>
-</div>
-
-
-<div class="about pure-g">
-    <div class="about-image pure-u-1 pure-u-sm-3-5 pure-u-md-8-24"><img src="source/img/about-img.png" alt=""></div>
-   <div class="about-content pure-u-1 pure-u-sm-2-5 pure-u-md-12-24">
-        <h1 class="about-title">About Me</h1>
-         <p class="about-info">Storbajo, is a brand that I created for do my work as a designer.
-</p>
-<p class="about-info">Since 2013 I’m been working in my own projects and my own brand, giving to each of my projects my own stamp, trying to find the best way to resolve comunitation problems and thinking how I can develop it.</p>
-
-<p class="about-info">I’ve done graphic design projects, art direction, visual identity, lettering designs, and I’m dabbling in web design doing some projects with my mentor and best friend Andres Vargas.</p>
-   </div>
-
-    <ul class="references pure-u-1 pure-u-md-4-24">
-        <li class="references-container pure-u-sm-7-24 pure-u-md-1">
-            <h2 class="references-title">Proyects</h2>
-            <p class="reference-info">20-06</p>
-            <p class="reference-info">xxxx-Magazine</p>
-            <p class="reference-info">Macao</p>
-        </li>
-        <li class="references-container pure-u-sm-8-24  pure-u-md-1">
-            <h2 class="references-title"><a href="">Published</a></h2>
-            <p class="reference-info"><a href="">Typism Book 2</a></p>
-            <p class="reference-info"><a href="">Typism Book 3</a></p>
-        </li>
-        <li class="references-container pure-u-sm-8-24 pure-u-md-1">
-            <h2 class="references-title">Friends & </br> Colleagues</h2>
-            <p class="reference-info"><a href="">Andres Vargas</a></p>
-            <p class="reference-info"><a href="">Pico Motion</a></p>
-            <p class="reference-info"><a href="">Capitan Jim</a></p>
-            <p class="reference-info"><a href="">Goske Rojo</a></p>
-        </li>
-    </ul>
-
-</div>
-
-<div class="contact">
-
-    <div class="contact-content pure-g">
-        <div class="contact-form pure-u-1 pure-u-md-10-24">
-            <form action="" class="form">
-                <h1 class="contact-title">Contact</h1>
-                <legend>Feel free to contact me here!:</legend>
-                <fieldset>
-                    <input type="text" placeholder="Name">
-                </fieldset>
-                <fieldset>
-                    <input type="email" placeholder="E-mail">
-                </fieldset>
-                <fieldset class="last">
-                    <textarea placeholder="Message"></textarea>
-                </fieldset>
-                <button type="submit">
-                    Send
-                </button>
-            </form>
-        </div>
-
-        <div class="wallpaper-container pure-g pure-u-lg-14-24">
-            <div class="wallpaper-inside">
-            <p class="wallpaper-info">You can download some of my wallpapers!</p>
-            <ul class="wallpaper-list pure-g">
-                <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item"><a class="wallpaper-anchor" href="">
-                        <img src="source/img/wallpaper.png" alt="">
-                    </a>
-                </li>
-                <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item"><a class="wallpaper-anchor" href="">
-                        <img src="source/img/wallpaper.png" alt="">
-                    </a>
-                </li>
-                <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item hide-sm-m "><a class="wallpaper-anchor" href="">
-                        <img src="source/img/wallpaper.png" alt="">
-                    </a>
-                </li>
-                <li class="pure-u-1 pure-u-sm-1-2 wallpaper-item hide-sm-m "><a class="wallpaper-anchor" href="">
-                        <img src="source/img/wallpaper.png" alt="">
-                    </a>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </div>
-</div>-->
-
-<footer class="footer pure-g">
-     <ul class="footer-networks pure-u-sm-10-24">
-         <li class="social tumblr"><a class="icon-tumblr-icon" href="https://storbajo.tumblr.com" target="_blank"></a></li>
-         <li class="social dribbble"><a class="icon-dribbble-icon" href="https://dribbble.com/storbajo" target="_blank"></a></li>
-         <li class="social instagram"><a class="icon-instagram-icon" href="https://instagram.com/storbajo" target="_blank"></a></li>
-         <li class="social soundcloud"><a class="icon-soundcloud-icon" href="https://soundcloud.com/storbajo" target="_blank"></a></li>
-    </ul>
-    <div class="footer-info pure-u-sm-14-24">
-        <p><a href="mailto:contact@storbajo.com">contact@storbajo.com</a></p>
-		<p>(+57) 314 258 9606</p>
-		<p><strong>Bogotá - Colombia</strong></p>
-    </div>
- </footer>
 <script src="main.js"></script>
 </body>
     </html>

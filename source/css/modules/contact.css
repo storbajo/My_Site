@@ -32,6 +32,10 @@
     display: block;
 }
 
+.wallpaper-item {
+    padding-bottom: 20px;
+}
+
 
 .wallpaper-list img{
     width:100%;
@@ -111,6 +115,7 @@ button:hover {
 
 @media screen and (min-width: 35.5em) {
 
+
 }
 
 /*LargeStyles*/
@@ -121,7 +126,9 @@ button:hover {
     padding-top: 30px;
 }
 .contact-content {
-    padding: 0 80px;
+    height: 100%;
+    position: relative;
+    padding: 0;
 }
 
 .contact input,
@@ -150,9 +157,12 @@ button:hover {
 .wallpaper-list,
 .wallpaper-info {
     box-sizing: border-box;
-    padding: 0 40px;8  
+    padding: 0 40px;
 }
 
+.wallpaper-item {
+    padding-bottom: 0;
+}
 
 
 .contact fieldset {
@@ -169,6 +179,10 @@ button:hover {
 
 .contact-title{
     display: none;
+}
+
+.contact-form {
+    padding: 0 80px;
 }
 
 .contact legend,

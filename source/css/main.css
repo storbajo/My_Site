@@ -7,6 +7,7 @@
 @import "modules/about.css";
 @import "modules/contact.css";
 @import "modules/font.css";
+@import "modules/onepage-scroll.css";
 
 * {
     box-sizing: border-box;
@@ -30,6 +31,10 @@
 
 .hide-lg{
     display:block;
+}
+
+.onepage-wrapper .section {
+    overflow: auto;
 }
 
 @media screen and (min-width: 36.5em) {
@@ -88,8 +93,19 @@ font-family: 'Arvo', serif;
     align-items: center;
     text-align: center;
     color: white;
-    flex-wrap;
+    flex-wrap: wrap;
     flex-direction: column;
+}
+
+.home:before {
+    content: '';
+    background-image: url('../img/pattern2-01.svg');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: 10%;
 }
 
 .home h1 {
@@ -108,7 +124,7 @@ font-family: 'Arvo', serif;
 .home span {
     font-size: 18px;
     color: #00FFAA;
-    text-align: right;
+    text-align: center;
     font-family: 'Arvo', serif;
     font-style: italic;
     margin-top: 5px;
@@ -138,6 +154,7 @@ font-family: 'Arvo', serif;
     margin: 0 auto;
     padding: 0 30px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .home span:after {
@@ -161,10 +178,15 @@ font-family: 'Arvo', serif;
 
     .home h1 {
         font-size: 75px;
+        font-size: 0 20px;
     }
 
     .home span {
         right: 0;
+    }
+
+    .onepage-wrapper .section {
+        padding-bottom: 120px;
     }
 }
 
@@ -173,7 +195,7 @@ font-family: 'Arvo', serif;
 @media screen and (min-width: 64em) {
 
     .home .wrapp-home {
-        width: 755px;
+        width: 805px;
     }
 }
 
