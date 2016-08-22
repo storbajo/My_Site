@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 		if(bodyWidth < 1024) {
 			$(".main").moveTo(1);
+			$('.main').off('touchstart swipeDown swipeUp');
 		}
 	});
 
@@ -17,6 +18,14 @@ $(document).ready(function(){
 			$(this).parents().find(body).removeClass('open');
 		}
 	});
+
+	$("section, .scroll-down").on("mouseenter mouseleave click", function() {
+		console.log("hello")
+		if(bodyWidth < 1024) {
+			$('.main').off('touchstart swipeDown swipeUp');
+		}
+	});
+
 
 	$("#nav-icon").click(function(){
 		$(this).parents().find("body").toggleClass("open");
@@ -44,7 +53,13 @@ $(document).ready(function(){
 		}
 	});
 
-	$(".main").onepage_scroll();
+	$('.scroll-down').on('click', function() {
+		$('.main').moveDown();
+	});
+
+	$(".main").onepage_scroll({
+
+	});
 });
 
 

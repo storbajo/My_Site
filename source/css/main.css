@@ -37,6 +37,11 @@
     overflow: auto;
 }
 
+.scroll-down {
+    position: fixed;
+    bottom: 0;
+}
+
 @media screen and (min-width: 36.5em) {
     .hide-sm {
         display: block;
