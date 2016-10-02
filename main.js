@@ -6,13 +6,17 @@ $(document).ready(function(){
 	$(window).on("resize", function() {
 		scrollNavi();
 
-		if( bodyWidth > 1024 && body.hasClass("open")) {
+		if ( bodyWidth > 1024 && body.hasClass("open")) {
 			body.toggleClass("open");
 		}
 
-		if(bodyWidth < 1024) {
+		if (bodyWidth < 1024) {
 			$(".main").moveTo(1);
 			$('.main').off('touchstart swipeDown swipeUp');
+		}
+
+		if (bodyWidth > 500) {
+			body.removeClass("disabled-onepage-scroll");
 		}
 	});
 
@@ -31,6 +35,7 @@ $(document).ready(function(){
 
 	$("#nav-icon").click(function(){
 		$(this).parents().find("body").toggleClass("open");
+		$(body).toggleClass("disabled-onepage-scroll");
 	});
 
 	$(".nav-anchor").on('click', function() {
@@ -56,14 +61,16 @@ $(document).ready(function(){
 	});
 
 	function scrollNavi() {
-		if (w > 500) {
-			$('.scroll-down').on('click', function() {
-				$('.main').moveDown();
-			});
+		$('.scroll-down').on('click', function() {
+			$('.main').moveDown();
+		});
 
-			$(".main").onepage_scroll();
-		}
+		$(".main").onepage_scroll();
 	};
+
+	if (bodyWidth > 500) {
+		body.removeClass("disabled-onepage-scroll");
+	}
 
 	scrollNavi();
 
