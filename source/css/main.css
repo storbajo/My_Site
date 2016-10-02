@@ -34,7 +34,7 @@
 }
 
 .onepage-wrapper .section {
-    overflow: auto;
+    overflow: hidden;
 }
 
 .scroll-down {
