@@ -37,6 +37,10 @@
     overflow: hidden;
 }
 
+.onepage-wrapper .section {
+    height: auto;
+}
+
 .scroll-down {
     position: fixed;
     bottom: 0;
@@ -53,6 +57,10 @@ body {
 
     body {
         overflow:hidden;
+    }
+
+    .onepage-wrapper .section {
+        height: 100%;
     }
 
     .hide-md {
