@@ -42,9 +42,17 @@
     bottom: 0;
 }
 
+body {
+    overflow: auto;
+}
+
 @media screen and (min-width: 36.5em) {
     .hide-sm {
         display: block;
+    }
+
+    body {
+        overflow:hidden;
     }
 
     .hide-md {

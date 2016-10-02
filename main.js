@@ -1,8 +1,11 @@
 $(document).ready(function(){
 	var body = $("body"),
+		w = window.innerWidth,
 		bodyWidth = body.width();
 
 	$(window).on("resize", function() {
+		scrollNavi();
+
 		if( bodyWidth > 1024 && body.hasClass("open")) {
 			body.toggleClass("open");
 		}
@@ -20,7 +23,6 @@ $(document).ready(function(){
 	});
 
 	$("section, .scroll-down").on("mouseenter mouseleave click", function() {
-		console.log("hello")
 		if(bodyWidth < 1024) {
 			$('.main').off('touchstart swipeDown swipeUp');
 		}
@@ -53,14 +55,20 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.scroll-down').on('click', function() {
-		$('.main').moveDown();
-	});
+	function scrollNavi() {
+		if (w > 500) {
+			$('.scroll-down').on('click', function() {
+				$('.main').moveDown();
+			});
 
-	$(".main").onepage_scroll({
+			$(".main").onepage_scroll();
+		}
+	};
 
-	});
+	scrollNavi();
+
 });
+
 
 
 
