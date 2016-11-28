@@ -5,6 +5,10 @@
     height: 100%;
 }
 
+.work-content {
+    letter-spacing: 1px;
+}
+
 .works .work-item {
     height: 33.333%;
 }
